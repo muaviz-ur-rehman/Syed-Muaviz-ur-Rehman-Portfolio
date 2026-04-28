@@ -63,7 +63,7 @@ export function Contact() {
               </div>
               <div>
                 <h4 className="text-foreground font-bold mb-1 text-sm uppercase tracking-wide">Location</h4>
-                <p className="text-sm text-muted">Available remotely & worldwide</p>
+                <p className="text-sm text-muted">Bhakkar, Punjab Pakistan</p>
               </div>
             </div>
 

@@ -6,8 +6,8 @@ export const portfolioData = {
     email: "muaviz@scholar.tu.edu.pk",
     cgpa: "3.89 / 4.00",
     socials: {
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
+      github: "https://github.com/muaviz-ur-rehman",
+      linkedin: "https://www.linkedin.com/in/syed-muaviz-ur-rehman/",
     },
     about: "I am a final-year Computer Science student specializing in Python, AI, and Data Science. With a rigorous academic background (CGPA 3.89/4.00) and hands-on experience as a Python Development Trainee, I am passionate about building intelligent systems and extracting meaningful insights from complex data. I serve as a Technical Event Coordinator and Creative Lead, blending technical proficiency with leadership and communication."
   },
