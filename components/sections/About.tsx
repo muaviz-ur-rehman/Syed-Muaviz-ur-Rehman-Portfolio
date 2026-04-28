@@ -81,13 +81,30 @@ export function About() {
               <div className="label-editorial mb-4">Certifications</div>
               <div className="flex flex-col gap-4">
                 {portfolioData.certifications.map((cert, idx) => (
-                  <div key={idx} className="flex justify-between items-center border-b border-border-subtle pb-3 last:border-0 last:pb-0">
+                  <div key={idx} className="flex flex-col gap-1 border-b border-border-subtle pb-3 last:border-0 last:pb-0">
                     <h4 className="font-bold text-sm text-foreground">{cert.title}</h4>
                     <p className="text-[10px] uppercase tracking-widest text-muted">{cert.issuer}</p>
                   </div>
                 ))}
               </div>
             </div>
+
+            {portfolioData.awards && portfolioData.awards.length > 0 && (
+              <div className="card mt-4">
+                <div className="label-editorial mb-4">Awards & Achievements</div>
+                <div className="flex flex-col gap-4">
+                  {portfolioData.awards.map((award, idx) => (
+                     <div key={idx} className="flex flex-col gap-2 border-b border-border-subtle pb-3 last:border-0 last:pb-0">
+                       <div>
+                         <h4 className="font-bold text-sm text-foreground mb-1">{award.title}</h4>
+                         <span className="text-[10px] uppercase tracking-widest text-muted">{award.issuer}</span>
+                       </div>
+                       <p className="text-xs text-muted leading-relaxed">{award.description}</p>
+                     </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </motion.div>
         </div>
       </div>
