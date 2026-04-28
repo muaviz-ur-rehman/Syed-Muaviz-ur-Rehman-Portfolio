@@ -39,9 +39,9 @@ export function Resume() {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/90 z-10 flex flex-col items-center justify-end pb-12 opacity-80 group-hover:opacity-100 transition-opacity">
             <p className="text-foreground font-bold uppercase tracking-widest text-sm mb-4">Interactive CV Viewer</p>
-            <button className="flex items-center gap-2 bg-accent text-background px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-opacity">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-accent text-background px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-opacity">
               <FileText size={18} /> Open Full Screen
-            </button>
+            </a>
           </div>
           <div className="absolute inset-0 flex items-center justify-center opacity-20 bg-surface">
             {/* abstract placeholder pattern for resume viewer */}
