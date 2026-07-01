@@ -3,18 +3,19 @@ export const portfolioData = {
     name: "Syed Muaviz Ur Rehman",
     title: "AI & Data Science Specialist",
     tagline: "Exploring the intersection of data, models, and real-world impact.",
-    email: "muaviz@scholar.tu.edu.pk",
-    cgpa: "3.89 / 4.00",
+    email: "syedmuavizurrehman0198@gmail.com",
+    cgpa: "3.91 / 4.00",
     socials: {
       github: "https://github.com/muaviz-ur-rehman",
       linkedin: "https://www.linkedin.com/in/syed-muaviz-ur-rehman/",
+      "google-scholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=jCVIeqwAAAAJ",
     },
-    about: "I am a final-year Computer Science student specializing in Python, AI, and Data Science. With a rigorous academic background (CGPA 3.89/4.00) and hands-on experience as a Python Development Trainee, I am passionate about building intelligent systems and extracting meaningful insights from complex data. I serve as a Technical Event Coordinator and Creative Lead, blending technical proficiency with leadership and communication."
+    about: "I am a final-year Computer Science student specializing in Python, AI, and Data Science. With a rigorous academic background (CGPA 3.91/4.00) and hands-on experience as a Python Development Trainee, I am passionate about building intelligent systems and extracting meaningful insights from complex data. I serve as a Technical Event Coordinator and Creative Lead, blending technical proficiency with leadership and communication."
   },
   skills: [
-    { category: "Languages", items: ["Python", "Java", "SQL", "JavaScript", "C++"] },
-    { category: "AI / ML / Data", items: ["Machine Learning", "Deep Learning", "LLMs", "Data Science", "Pandas", "Scikit-Learn"] },
-    { category: "Technologies", items: ["IoT", "Git", "Docker", "REST Analytics", "Cloud Concepts"] },
+    { category: "Languages", items: ["CSS","React.js","Python", "Java", "SQL", "JavaScript", "C++"] },
+    { category: "AI / ML / Data", items: ["Website Development","Machine Learning", "Deep Learning", "Data Science", "Pandas", "Scikit-Learn"] },
+    { category: "Technologies", items: ["IoT", "Git", "REST Analytics", "Cloud Concepts"] },
   ],
   experience: [
     {
@@ -40,13 +41,27 @@ export const portfolioData = {
       period: "Mar 2024 - Present",
       description: "Designed compelling visual assets for environmental advocacy campaigns, promoting tree plantation drives.",
       achievements: ["Successfully used visual storytelling to enhance community engagement.", "Raised awareness regarding climate protection strategies."]
-    }
+    },
+    {
+  id: 4,
+  role: "Front-End Developer",
+  company: "TU VC Appointment System (Final Year Project)",
+  period: "Jan 2026 - June 2026",
+  description: "Designed and developed the user interface for the TU VC Appointment System, a digital platform that enables students to submit appointment requests, fee reduction applications, and personal meeting requests while allowing the Vice Chancellor to review and manage them through a centralized dashboard.",
+
+  achievements: [
+    "Designed a clean and responsive user interface for both students and the Vice Chancellor dashboard.",
+    "Developed modules for appointment requests, personal meeting requests, and fee reduction applications.",
+    "Integrated the frontend with REST APIs to enable real-time submission and retrieval of student requests.",
+    "Implemented application status tracking so students can monitor the progress of their requests.",
+    "Ensured compatibility across desktop and mobile devices, with the website deployed on Vercel and support for the Android application."]
+}
   ],
   education: {
     degree: "Bachelors in Computer Science",
     university: "Thal University, Bhakkar",
-    status: "Final Year Student",
-    cgpa: "3.89 / 4.00"
+    status: "Graduated",
+    cgpa: "3.91 / 4.00"
   },
   projects: [
     {

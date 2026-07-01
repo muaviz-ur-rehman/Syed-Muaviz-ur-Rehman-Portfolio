@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'motion/react';
-import { Send, MapPin, Mail, Github, Linkedin } from 'lucide-react';
+import { Send, MapPin, Mail, Github, Linkedin, BookOpen } from 'lucide-react';
 import { portfolioData } from '@/data/portfolio';
 
 export function Contact() {
@@ -31,10 +31,10 @@ export function Contact() {
         >
           <div className="label-editorial mb-2">Connect</div>
           <h2 className="text-3xl md:text-5xl font-bold uppercase tracking-tight mb-4">
-            Let's <span className="text-accent text-3xl md:text-5xl">Collaborate</span>
+            Let&apos;s <span className="text-accent text-3xl md:text-5xl">Collaborate</span>
           </h2>
           <p className="text-sm text-muted max-w-2xl leading-relaxed">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
           </p>
         </motion.div>
 
@@ -76,6 +76,11 @@ export function Contact() {
                 <a href={portfolioData.personal.socials.linkedin} target="_blank" rel="noreferrer" className="w-10 h-10 border border-border-subtle rounded-md flex items-center justify-center hover:bg-border-subtle hover:text-accent transition-colors">
                   <Linkedin size={18} />
                 </a>
+                {portfolioData.personal.socials['google-scholar'] && (
+                  <a href={portfolioData.personal.socials['google-scholar']} target="_blank" rel="noreferrer" className="w-10 h-10 border border-border-subtle rounded-md flex items-center justify-center hover:bg-border-subtle hover:text-accent transition-colors">
+                    <BookOpen size={18} />
+                  </a>
+                )}
               </div>
             </div>
           </motion.div>

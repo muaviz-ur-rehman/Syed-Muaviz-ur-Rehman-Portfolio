@@ -90,7 +90,7 @@ export function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-xl font-bold text-accent uppercase tracking-widest"
               >
-                Let's Talk
+                Let&apos;s Talk
               </a>
             </motion.div>
           )}

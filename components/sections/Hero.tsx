@@ -1,9 +1,14 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { TypeAnimation } from 'react-type-animation';
+import dynamic from 'next/dynamic';
 import { ArrowRight, Download } from 'lucide-react';
 import { portfolioData } from '@/data/portfolio';
+
+const TypeAnimation = dynamic(
+  () => import('react-type-animation').then((mod) => mod.TypeAnimation),
+  { ssr: false }
+);
 
 export function Hero() {
   return (
@@ -23,7 +28,7 @@ export function Hero() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold leading-[0.9] tracking-tight mb-6">
-            Hi, I'm {portfolioData.personal.name.split(' ')[0]}
+            Hi, I&apos;m {portfolioData.personal.name.split(' ')[0]}
             <br />
             <span className="text-accent inline-block mt-2">
               <TypeAnimation
@@ -78,10 +83,10 @@ export function Hero() {
                   key={i}
                   animate={{
                     opacity: [0.2, 0.8, 0.2],
-                    height: [20, Math.random() * 60 + 20, 20],
+                    height: [20, (i % 3) * 20 + 20, 20],
                   }}
                   transition={{
-                    duration: 3 + Math.random() * 2,
+                    duration: 3 + (i % 2),
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
